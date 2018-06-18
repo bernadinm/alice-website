@@ -1,5 +1,7 @@
 # Alice's Website
 
+[![CircleCI](https://circleci.com/gh/bernadinm/alice-website.svg?style=svg)](https://circleci.com/gh/bernadinm/alice-website)
+
 # Instructions to Redeploy Site
 
 This site has an automated build process. In order for the site to be reployed by any code change, Alice must simply pull from her latest git commits, make a change, and push the new changes. Everything else will be managed, tested, and deployed via CircleCi.
