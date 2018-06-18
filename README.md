@@ -38,6 +38,8 @@ At this point, the website will be pushed into the CICD pipeline, tested by an H
 
 Currently the default website being used is the python3 HTTP webserver. If Alice would like to change this to NGINX, she may simply change the server_deploy.sh file locally. 
 
+
+####### Python3 Webserver
 ```bash
 #!/bin/sh
 
@@ -45,6 +47,7 @@ git clone git@github.com:bernadinm/alice-website.git
 docker run -d -v $PWD/alice-website:/var/www:ro -p 8000:8080 trinitronx/python-simplehttpserver
 ```
 
+####### NGINX Webserver
 ```bash
 #!/bin/sh
 
