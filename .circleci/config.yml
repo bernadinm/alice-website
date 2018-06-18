@@ -49,7 +49,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            html_lint.py index.html
+            html_lint.py index.html --disable=optional_tag
 
       - store_artifacts:
           path: test-reports
