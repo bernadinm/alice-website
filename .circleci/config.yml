@@ -1,4 +1,3 @@
-
 # Python CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
@@ -56,7 +55,7 @@ jobs:
           destination: test-reports
          
 deployment:
-  production: # just a label; label names are completely up to you
+  production: # WIP Auto Deploy Multi Region with Terraform 
     branch: master
     commands:
       - ./deploy-to-production.sh
@@ -64,4 +63,3 @@ deployment:
     branch: staging
     commands:
       - ./deploy-to-staging.sh
-
