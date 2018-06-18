@@ -44,7 +44,7 @@ Currently the default website being used is the python3 HTTP webserver. If Alice
 #!/bin/sh
 
 git clone git@github.com:bernadinm/alice-website.git
-docker run -d -v $PWD/alice-website:/var/www:ro -p 8000:8080 trinitronx/python-simplehttpserver
+docker run -d -v $PWD/alice-website/src:/var/www:ro -p 8000:8080 trinitronx/python-simplehttpserver
 ```
 
 ####### NGINX Webserver
@@ -52,5 +52,5 @@ docker run -d -v $PWD/alice-website:/var/www:ro -p 8000:8080 trinitronx/python-s
 #!/bin/sh
 
 git clone git@github.com:bernadinm/alice-website.git
-docker run -d -v $PWD/alice-website:/usr/share/nginx/html:ro -p 8000:80 nginx
+docker run -d -v $PWD/alice-website/src:/usr/share/nginx/html:ro -p 8000:80 nginx
 ```
