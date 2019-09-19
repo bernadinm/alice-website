@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alice-webstite
+  namespace: spinnaker
+spec:
+  containers:
+    - command:
+        - sleep
+        - '36000'
+      image: sequenceiq/busybox
+      imagePullPolicy: IfNotPresent
+      name: busybox
+  restartPolicy: Always
